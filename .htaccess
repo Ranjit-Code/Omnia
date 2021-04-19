@@ -1,0 +1,5 @@
+Options +FollowSymlinks
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^omniahospital.com [NC]
+RewriteRule ^(.*)$ https://www.omniahospital.com/$1 [R=301,NC]
+RewriteRule ^index.html$ https://www.omniahospital.com/ [R=301,L]
